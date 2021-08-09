@@ -1,0 +1,31 @@
+.intro {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 70% auto;
+  position: relative;
+  font-family: "Hachi Maru Pop", cursive;
+}
+.intro section {
+  background: #6e00ff;
+  height: 100%;
+}
+.intro section div {
+  padding: 100px 0;
+  width: 600px;
+  margin-left: 200px;
+  font-size: 2em;
+  color: white;
+  line-height: 1.5em;
+}
+
+.intro h5 {
+  color: #ff64cb;
+  line-height: 5em;
+  font-size: 0.7em;
+}
+
+.intro svg {
+  width: 400px;
+  position: absolute;
+  left: 740px;
+}

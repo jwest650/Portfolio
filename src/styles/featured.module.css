@@ -1,0 +1,28 @@
+.featured {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+  height: 40vh;
+}
+
+.featured section {
+  width: 400px;
+  margin-left: 100px;
+}
+
+.featured h3 {
+  line-height: 3em;
+}
+
+.featured p {
+  line-height: 1.5em;
+}
+
+.featured svg {
+  position: absolute;
+  right: 180px;
+  top: -10px;
+  background-color: #343434;
+  border-radius: 15px;
+}

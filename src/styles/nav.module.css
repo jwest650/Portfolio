@@ -1,0 +1,39 @@
+.header {
+  display: grid;
+  grid-template-columns: 70% auto;
+  align-items: center;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  height: 55px;
+}
+
+.header header {
+  display: grid;
+  background-color: #6700ee;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100%;
+}
+.header h2 {
+  margin-left: 60px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  padding: 0 10px;
+  color: white;
+}
+
+.header aside {
+  color: black;
+  padding-left: 150px;
+}
+
+.header i {
+  font-size: 2em;
+  padding: 0 10px;
+}
