@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
+body {
+    color: #ccd6f6;
+    background-color: #0a192f;
+    font-family: "Inconsolata", monospace;
+}
+.right {
+    writing-mode: sideways-rl;
+}
+.logo {
+    font-family: "Fuzzy Bubbles", cursive;
+}
+.prohectImg {
+    filter: blur(8px);
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+.lft {
+    flex-direction: row;
+}
