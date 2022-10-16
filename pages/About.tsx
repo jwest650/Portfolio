@@ -1,9 +1,26 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { SiAngellist } from "react-icons/si";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 const About = () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    useEffect(() => {
+        gsap.from("#about", {
+            scrollTrigger: {
+                trigger: "#about",
+                start: "top top",
+            },
+            duration: 2,
+            opacity: 0,
+            y: 100,
+        });
+    }, []);
+
     return (
-        <div id="about" className="ml-36 h-screen space-y-8">
+        <div id="about" className="ml-36 h-screen space-y-8 pt-20">
             <div className="flex items-center ">
                 <h1 className="text-2xl font-semibold">
                     <small className="text-md text-[#64FFDA] mr-4">02.</small>
@@ -13,10 +30,15 @@ const About = () => {
             </div>
             <section className="flex space-x-16 text-lg">
                 <div className="w-[500px] space-y-4">
-                    <h1 className="leading-7">
-                        Hello! My name is Jerry Gasu and I enjoy creating things
-                        that live on the internet. My interest in computers lead
-                        me to web development.
+                    <h1 className="leading-7 text-[#64FFDA]">
+                        {`<p>`} <br />
+                        <p className="text-[#CCD6F6]">
+                            {" "}
+                            Hello! My name is Jerry Gasu and I enjoy creating
+                            things that live on the internet. My interest in
+                            computers lead me to web development.
+                        </p>
+                        {`</p>`}
                     </h1>
                     <h1>
                         Here are a few technologies I’ve been working with
@@ -25,19 +47,19 @@ const About = () => {
                     <aside className="grid grid-cols-2 capitalize text-[14px]">
                         <div>
                             <div className="flex items-center space-x-2">
-                                <small>
+                                <small className=" text-[#64FFDA]">
                                     <SiAngellist />
                                 </small>
                                 <p>javascript</p>
                             </div>
                             <div className="flex items-center space-x-2">
-                                <small>
+                                <small className=" text-[#64FFDA]">
                                     <SiAngellist />
                                 </small>
                                 <p>react</p>
                             </div>
                             <div className="flex items-center space-x-2">
-                                <small>
+                                <small className=" text-[#64FFDA]">
                                     <SiAngellist />
                                 </small>
                                 <p>react native</p>
@@ -45,19 +67,19 @@ const About = () => {
                         </div>
                         <div>
                             <div className="flex items-center space-x-2">
-                                <small>
+                                <small className=" text-[#64FFDA]">
                                     <SiAngellist />
                                 </small>
                                 <p>mongo db</p>
                             </div>
                             <div className="flex items-center space-x-2">
-                                <small>
+                                <small className=" text-[#64FFDA]">
                                     <SiAngellist />
                                 </small>
                                 <p>node js</p>
                             </div>
                             <div className="flex items-center space-x-2">
-                                <small>
+                                <small className=" text-[#64FFDA]">
                                     <SiAngellist />
                                 </small>
                                 <p>express</p>
