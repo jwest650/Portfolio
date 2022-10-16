@@ -1,9 +1,9 @@
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import { FiGithub } from "react-icons/fi";
 import { IoMdOpen } from "react-icons/io";
 
-const Project = ({ data, index }) => {
+const Project = ({ data, index }: any) => {
     const reverse = index % 2 !== 0;
     return (
         <section
