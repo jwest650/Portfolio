@@ -32,7 +32,7 @@ const Project = ({ data, index }: any) => {
                         reverse ? "md:justify-start" : "md:justify-end"
                     }  `}
                 >
-                    {data.tools.map((value, i) => (
+                    {data.tools.map((value: any, i: any) => (
                         <p className="text-[#A0ABCA]">{value}</p>
                     ))}
                 </div>
