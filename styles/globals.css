@@ -21,3 +21,6 @@ body {
 .lft {
     flex-direction: row;
 }
+html {
+    scroll-behavior: smooth;
+}

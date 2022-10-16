@@ -13,14 +13,14 @@ const About = () => {
                 trigger: "#about",
                 start: "top top",
             },
-            duration: 2,
+            duration: 1,
             opacity: 0,
             y: 100,
         });
     }, []);
 
     return (
-        <div id="about" className="ml-36 h-screen space-y-8 pt-20">
+        <div id="about" className="md:ml-36 h-full  space-y-8  p-5 md:pt-20">
             <div className="flex items-center ">
                 <h1 className="text-2xl font-semibold">
                     <small className="text-md text-[#64FFDA] mr-4">02.</small>
@@ -28,7 +28,7 @@ const About = () => {
                 </h1>
                 <div className="h-[1px] bg-[#233554] w-[200px] ml-5" />
             </div>
-            <section className="flex space-x-16 text-lg">
+            <section className="flex flex-wrap space-x-16 text-lg space-y-5">
                 <div className="w-[500px] space-y-4">
                     <h1 className="leading-7 text-[#64FFDA]">
                         {`<p>`} <br />

@@ -7,25 +7,23 @@ const Projects = () => {
     const data = projectInfo;
 
     gsap.registerPlugin(ScrollTrigger);
-    function animate() {
-        return gsap.from(".list section", {
-            xPercent: 100,
-            opacity: 0,
-            stagger: 0.1,
-            ease: "back.out(1.7)",
-        });
-    }
+
     useEffect(() => {
-        // let p = document.querySelector("#projects");
-        // console.log(p);
-        // p.addEventListener("scroll", animate);
+        const el = document.querySelectorAll(".list section");
+        el.forEach((e) => {
+            gsap.from(e, {
+                scrollTrigger: {
+                    trigger: e,
+                    start: "top center",
+                },
+                duration: 2,
+                opacity: 0,
+                y: 100,
+            });
+        });
     }, []);
     return (
-        <div
-            id="projects"
-            className="h-full  space-y-14 p-5 pt-20"
-            onScroll={animate}
-        >
+        <div id="projects" className="h-full  space-y-14 p-5 pt-20">
             <div className="flex items-center">
                 <h1 className="text-2xl font-semibold ">
                     <small className="text-md text-[#64FFDA] mr-4">03.</small>

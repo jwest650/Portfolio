@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { CgMenuRight } from "react-icons/cg";
 const Nav = () => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(ScrollToPlugin);
@@ -29,11 +30,14 @@ const Nav = () => {
         tl.from(".four", { opacity: 0, y: -50 });
     }, []);
     return (
-        <nav className="flex items-center justify-between p-5 px-14 capitalize cursor-pointer sticky w-full top-0 bg-[#0A192F] z-50 ">
+        <nav className="flex items-center justify-between p-5 md:px-14 capitalize cursor-pointer sticky w-full top-0 bg-[#0A192F] z-50 ">
             <div className="logo text-xl font-bold">
                 <p>Jay West</p>
             </div>
-            <div className="flex items-center space-x-10  ">
+            <div>
+                <CgMenuRight className="md:hidden text-3xl" />
+            </div>
+            <div className="md:flex items-center space-x-10 hidden  ">
                 <Link href={"#home"} onClick={moveHome}>
                     <p className="one">
                         <small className="text-md text-[#64FFDA] mr-2 ">
@@ -66,11 +70,11 @@ const Nav = () => {
                         Contact
                     </p>
                 </Link>
-                <Link href={""}>
+                <a href={"/"} target="_blank" download>
                     <button className="border border-[#64FFDA] p-2 px-5 rounded-sm ">
                         Resume
                     </button>
-                </Link>
+                </a>
             </div>
         </nav>
     );
