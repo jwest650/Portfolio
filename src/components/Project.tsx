@@ -13,7 +13,7 @@ const Project = ({ data, index }: any) => {
         >
             <div className=" w-[87%] md:w-[600px] h-[350px] absolute  md:relative group rounded-sm overflow-hidden mx-5 -z-50 md:z-50 ">
                 <Image src={data.img} alt="" layout="fill" />
-                <div className="absolute w-full h-full bg-[#0B1B31]  md:bg-[#0a192f9a] group-hover:hidden" />
+                <div className="absolute w-full h-full bg-[#0B1B31]  md:bg-[#0a192f9a] md:group-hover:hidden" />
             </div>
             <div
                 className={` flex-1  space-y-4 ${

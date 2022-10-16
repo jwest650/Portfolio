@@ -31,7 +31,7 @@ const LeftBar = () => {
         });
     }, []);
     return (
-        <div className="hidden fixed w-28 h-screen  left-0 md:flex flex-col items-center pt-52   space-y-6 text-4xl left cursor-pointer ">
+        <div className="hidden fixed w-28 h-screen  left-0 md:flex flex-col items-center pt-[280px]   space-y-6 text-4xl left cursor-pointer ">
             <Link href="https://github.com/jwest650/" target="_blank">
                 <FiGithub className="git" />
             </Link>
