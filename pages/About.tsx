@@ -11,7 +11,7 @@ const About = () => {
         gsap.from("#about", {
             scrollTrigger: {
                 trigger: "#about",
-                start: "top top",
+                start: "top center",
             },
             duration: 1,
             opacity: 0,

@@ -26,15 +26,18 @@ const HomePage = () => {
         tl.from(".contact", { opacity: 0, y: 50 });
     }, []);
     return (
-        <div id="home" className="md:px-20  space-y-9 h-screen md:pt-20 p-5 ">
+        <div
+            id="home"
+            className="md:px-20  space-y-9 h-screen md:pt-20 p-5 flex flex-col justify-center "
+        >
             <p className="text-[#64FFDA] intro">Hi, my name is</p>
             <div className="space-y-3  font-bold capitalize">
-                <h1 className="md:text-5xl text-4xl name">jerry gasu</h1>
-                <h1 className="md:text-5xl text-4xl text1">
+                <h1 className="md:text-6xl text-3xl name">jerry gasu</h1>
+                <h1 className="md:text-5xl text-3xl text1">
                     i build things for the web
                 </h1>
             </div>
-            <p className="w-[80%] md:w-[500px] text2">
+            <p className="w-[80%] md:w-[500px]  text2">
                 in my role as a professional webdeveloper i am up for just about
                 any website building challenge..
             </p>
