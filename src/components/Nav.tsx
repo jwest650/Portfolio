@@ -41,7 +41,7 @@ const Nav = ({ show, setshow }: any) => {
                     <CgMenuRight className="md:hidden text-3xl" />
                 </div>
                 <div className="md:flex items-center space-x-10 hidden  ">
-                    <Link href={"#home"} onClick={moveHome}>
+                    <Link href={"#home"} scroll={false}>
                         <p className="one">
                             <small className="text-md text-[#64FFDA] mr-2 ">
                                 01.
@@ -49,7 +49,7 @@ const Nav = ({ show, setshow }: any) => {
                             Home
                         </p>
                     </Link>
-                    <Link href={"#about"} onClick={moveAbout}>
+                    <Link href={"#about"} scroll={false}>
                         <p className="two">
                             <small className="text-md text-[#64FFDA] mr-2 ">
                                 02.
@@ -57,7 +57,7 @@ const Nav = ({ show, setshow }: any) => {
                             About
                         </p>
                     </Link>
-                    <Link href={"#projects"}>
+                    <Link href={"#projects"} scroll={false}>
                         <p className="three">
                             <small className="text-md text-[#64FFDA] mr-2 ">
                                 03.
@@ -65,7 +65,7 @@ const Nav = ({ show, setshow }: any) => {
                             Projects
                         </p>
                     </Link>
-                    <Link href={"#contact"}>
+                    <Link href={"#contact"} scroll={false}>
                         <p className="four">
                             <small className="text-md text-[#64FFDA] mr-2 ">
                                 04.

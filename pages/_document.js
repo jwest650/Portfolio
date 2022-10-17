@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
     return (
-        <Html>
+        <Html style={{ scrollBehavior: "smooth" }}>
             <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
@@ -16,7 +16,6 @@ export default function Document() {
                 />
             </Head>
             <body>
-                <div id="portal"></div>
                 <Main />
                 <NextScript />
             </body>

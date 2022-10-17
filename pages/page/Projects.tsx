@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import Project from "../src/components/Project";
-import { projectInfo } from "../src/data";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Project from "../../src/components/Project";
+import { projectInfo } from "./../../src/data";
 const Projects = () => {
     const data = projectInfo;
 

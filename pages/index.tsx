@@ -3,10 +3,10 @@ import { useState } from "react";
 import LeftBar from "../src/components/LeftBar";
 import Nav from "../src/components/Nav";
 import Right from "../src/components/Right";
-import About from "./About";
-import Contact from "./Contact";
-import HomePage from "./Home";
-import Projects from "./Projects";
+import About from "./page/About";
+import Contact from "./page/Contact";
+import HomePage from "./page/Home";
+import Projects from "./page/Projects";
 
 const Home = () => {
     const [show, setshow] = useState(false);
