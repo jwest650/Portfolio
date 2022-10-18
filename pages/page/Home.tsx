@@ -47,7 +47,7 @@ const HomePage = () => {
                 target="_blank"
             >
                 <div className="w-fit">
-                    <button className="border border-[#64FFDA] p-2 px-6 rounded text-xl text-[#64FFDA] contact">
+                    <button className="border border-[#64FFDA] p-2 px-6 rounded text-xl text-[#64FFDA] contact outline-none">
                         {"Contact me/>"}
                     </button>
                 </div>

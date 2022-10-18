@@ -87,8 +87,8 @@ const About = () => {
                         </div>
                     </aside>
                 </div>
-                <div className=" rounded-sm h-64 w-60 group relative ">
-                    <div className="h-64 w-60 top-5 left-5 border-2 absolute border-[#64FFDA] rounded group-hover:top-2 group-hover:left-2 transition-all duration-700" />
+                <div className=" rounded-sm w-40 h-40 md:h-64 md:w-60 group relative ">
+                    <div className=" w-40 h-40 md:h-64 md:w-60 top-5 left-5 border-2 absolute border-[#64FFDA] rounded group-hover:top-2 group-hover:left-2 transition-all duration-700" />
                     <Image
                         src="/Copy of _DSC0920.jpg"
                         alt=""
