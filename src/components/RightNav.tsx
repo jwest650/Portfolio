@@ -5,7 +5,7 @@ const RightNav = ({ setshow }) => {
     return (
         <div className="w-full h-full bg-[#0000008e]   fixed  top-0  bottom-0  z-40 ">
             <section className="ml-auto w-[200px] bg-[#041225] space-y-14 h-full p-5 pt-20 cursor-pointer">
-                <Link href={"#home"}>
+                <Link href={"#home"} scroll={false}>
                     <p className="one" onClick={() => setshow(false)}>
                         <small className="text-md text-[#64FFDA] mr-2 ">
                             01.
@@ -13,7 +13,7 @@ const RightNav = ({ setshow }) => {
                         Home
                     </p>
                 </Link>
-                <Link href={"#about"}>
+                <Link href={"#about"} scroll={false}>
                     <p className="one" onClick={() => setshow(false)}>
                         <small className="text-md text-[#64FFDA] mr-2 ">
                             02.
@@ -21,7 +21,7 @@ const RightNav = ({ setshow }) => {
                         About
                     </p>
                 </Link>{" "}
-                <Link href={"#projects"}>
+                <Link href={"#projects"} scroll={false}>
                     <p className="one" onClick={() => setshow(false)}>
                         <small className="text-md text-[#64FFDA] mr-2 ">
                             03.
@@ -29,7 +29,7 @@ const RightNav = ({ setshow }) => {
                         Project
                     </p>
                 </Link>{" "}
-                <Link href={"#contact"}>
+                <Link href={"#contact"} scroll={false}>
                     <p className="one" onClick={() => setshow(false)}>
                         <small className="text-md text-[#64FFDA] mr-2 ">
                             04.
