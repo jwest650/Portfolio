@@ -2,18 +2,11 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { CgMenuRight } from "react-icons/cg";
 import RightNav from "./RightNav";
 const Nav = ({ show, setshow }: any) => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.registerPlugin(ScrollToPlugin);
-    const moveHome = () => {
-        gsap.to(window, { duration: 2, scrollTo: { y: 300 } });
-    };
-    const moveAbout = () => {
-        gsap.to(window, { duration: 2, scrollTo: "#about" });
-    };
+
     useEffect(() => {
         const tl = gsap.timeline({
             opacity: 0,
