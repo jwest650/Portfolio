@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LeftBar from "../src/components/LeftBar";
 import Nav from "../src/components/Nav";
 import Right from "../src/components/Right";
@@ -10,13 +10,13 @@ import Projects from "./page/Projects";
 
 const Home = () => {
     const [show, setshow] = useState(false);
-    console.log(show);
 
     return (
         <div className="relative">
             <Head>
                 <title>Jay | Portfolio</title>
             </Head>
+
             <Nav setshow={setshow} show={show} />
             <LeftBar />
             <Right />

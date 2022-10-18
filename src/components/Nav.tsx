@@ -12,7 +12,9 @@ const Nav = ({ show, setshow }: any) => {
             opacity: 0,
             duration: 0.5,
         });
-
+        tl.from(".logo", {
+            y: -50,
+        });
         tl.from(".one", {
             y: -50,
         });
@@ -22,11 +24,12 @@ const Nav = ({ show, setshow }: any) => {
         });
         tl.from(".three", { opacity: 0, y: -50 });
         tl.from(".four", { opacity: 0, y: -50 });
+        tl.from(".resume", { opacity: 0, y: -50 });
     }, []);
 
     return (
         <div className="relative">
-            <nav className="flex items-center justify-between p-5 md:px-14 capitalize cursor-pointer fixed w-full top-0 bg-[#0A192F] z-50  ">
+            <nav className="flex items-center justify-between p-5 md:px-14 capitalize cursor-pointer fixed w-full top-0 bg-[#0A192F] z-40  ">
                 <div className="logo text-xl font-bold">
                     <p>Jay West</p>
                 </div>
@@ -67,7 +70,7 @@ const Nav = ({ show, setshow }: any) => {
                         </p>
                     </Link>
                     <a href={"/"} target="_blank" download>
-                        <button className="border border-[#64FFDA] p-2 px-5 rounded-sm ">
+                        <button className="border border-[#64FFDA] p-2 px-5 rounded-sm resume">
                             Resume
                         </button>
                     </a>
