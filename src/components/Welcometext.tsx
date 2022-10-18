@@ -21,7 +21,7 @@ const Welcometext = () => {
     return (
         <div
             id="welcome"
-            className="h-screen flex flex-col justify-center items-center text-4xl"
+            className="h-screen flex flex-col justify-center items-center md:text-4xl text-xl"
         ></div>
     );
 };
