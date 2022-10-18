@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const RightNav = ({ setshow }) => {
+const RightNav = ({ setshow }: any) => {
     return (
         <div className="w-full h-full bg-[#0000008e]   fixed  top-0  bottom-0  z-40 ">
             <section className="ml-auto w-[200px] bg-[#041225] space-y-14 h-full p-5 pt-20 cursor-pointer">
