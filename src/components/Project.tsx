@@ -41,7 +41,9 @@ const Project = ({ data, index }: any) => {
                         reverse ? "" : "md:justify-end"
                     } space-x-5 text-xl`}
                 >
-                    <FiGithub />
+                    <a href={data.git} target="_blank">
+                        <FiGithub />
+                    </a>
                     <a href={data.link} target="_blank">
                         <IoMdOpen />
                     </a>
