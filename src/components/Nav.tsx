@@ -69,7 +69,11 @@ const Nav = ({ show, setshow }: any) => {
                             Contact
                         </p>
                     </Link>
-                    <a href={"/"} target="_blank" download>
+                    <a
+                        href={"/Green Grey Color Blocks Copy Editor CV_2.pdf"}
+                        target="_blank"
+                        download
+                    >
                         <button className="border border-[#64FFDA] p-2 px-5 rounded-sm resume">
                             Resume
                         </button>
